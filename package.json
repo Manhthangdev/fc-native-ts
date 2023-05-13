@@ -1,0 +1,29 @@
+{
+  "name": "fc-native-ts",
+  "version": "1.0.5",
+  "description": "This is a library for React Native code (TypeScript)",
+  "main": "index.tsx",
+  "dependencies": {
+    "react-native-vector-icons": "^8.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "npm i fc-native-ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/winmds/fc-react-native-ts"
+  },
+  "keywords": [
+    "react-native-fc",
+    "fc-native",
+    "react-native",
+    "fc-native-ts"
+  ],
+  "author": "DO MANH THANG (THANG DEP TRAI)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/winmds"
+  },
+  "homepage": "https://github.com/winmds/fc-react-native-ts#readme"
+}
