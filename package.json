@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/winmds/fc-react-native-ts"
+    "url": "git+https://github.com/winmds/fc-native-ts"
   },
   "keywords": [
     "react-native-fc",
@@ -25,5 +25,5 @@
   "bugs": {
     "url": "https://github.com/winmds"
   },
-  "homepage": "https://github.com/winmds/fc-react-native-ts#readme"
+  "homepage": "https://github.com/winmds/fc-native-ts#readme"
 }
