@@ -129,7 +129,7 @@ const handleRemoveSpace = (str: string) => {
 const checkUserNameVNese = (value: string) => {
   const template = [
     "á",
-    "à",
+    "à", n
     "ả",
     "ã",
     "ạ",
