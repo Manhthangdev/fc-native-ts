@@ -1,7 +1,7 @@
 import React from 'react';
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native';
 
-export const GreenStyles = StyleSheet.create({
+export const CustomStyles = StyleSheet.create({
   center: {
     alignItems: 'center',
     justifyContent: 'center',

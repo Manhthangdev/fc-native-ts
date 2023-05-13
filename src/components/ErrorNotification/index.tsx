@@ -1,6 +1,7 @@
 import React from "react";
 import { Text, View } from "react-native";
 import { config } from "../../config";
+import { Colors } from "../../styles/colors";
 
 export const ErrorNotification = ({
   text,
@@ -23,7 +24,7 @@ export const ErrorNotification = ({
         <Text
           style={{
             fontSize: fontSize || 14,
-            color: color || config.colors.primaryColor,
+            color: color || Colors.black,
             fontWeight: isBold ? "bold" : "normal" || "normal",
             marginHorizontal: marginHorizontal || 0,
             marginVertical: marginVertical || 0,

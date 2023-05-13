@@ -5,7 +5,6 @@ import {
   windowWidth,
 } from "./src/config";
 import { Colors } from "./src/styles/colors";
-import { GreenStyles } from "./src/styles/greenStyles";
 import { ErrorNotification } from "./src/components/ErrorNotification";
 import { Icon } from "./src/components/Icon";
 import { Button } from "./src/components/Button";
@@ -13,39 +12,57 @@ import { CheckBox } from "./src/components/CheckBox";
 import { Spinner } from "./src/components/Spinner";
 import { ButtonIcon } from "./src/components/ButtonIcon";
 import { AnimationButton } from "./src/components/AnimationButton";
+import { CustomStyles } from "./src/styles/CustomStyles";
+
 import {
-  saveToStorage,
-  getFromStorage,
-  is18x9,
+  randomNonRepeat,
   isIOS,
   isNull,
-  randomNonRepeat,
+  is18x9,
   PhoneCall,
   parseMoney,
+  convertHTML,
+  isImageFile,
+  wait,
+  parseJwt,
+  getIndex,
+  checkStatus,
+  isNumber,
+  getPercent,
+  handleRemoveSpace,
+  checkUserNameVNese
 } from "./src/function";
 import { useKeyboard } from "./src/hook/useKeyboard";
 
 export {
   Colors,
-  ErrorNotification,
   screenWidth,
   screenHeight,
   windowWidth,
   windowHeight,
-  Icon,
+  CustomStyles,
   Button,
   CheckBox,
   AnimationButton,
-  saveToStorage,
-  getFromStorage,
-  is18x9,
-  isIOS,
-  isNull,
-  randomNonRepeat,
-  useKeyboard,
+  ErrorNotification,
   Spinner,
   ButtonIcon,
-  GreenStyles,
+  Icon,
+  randomNonRepeat,
+  isIOS,
+  isNull,
+  is18x9,
   PhoneCall,
   parseMoney,
+  convertHTML,
+  isImageFile,
+  wait,
+  parseJwt,
+  getIndex,
+  checkStatus,
+  isNumber,
+  getPercent,
+  handleRemoveSpace,
+  checkUserNameVNese,
+  useKeyboard
 };

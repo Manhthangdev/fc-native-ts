@@ -47,13 +47,13 @@ export const ButtonIcon = ({
         type={iconType || "Ionicons"}
         name={iconName || "chevron-back"}
         size={iconSize || 26}
-        color={iconColor || Colors.primaryColor}
+        color={iconColor || Colors.black}
       />
       <Text
         style={{
           marginLeft: 5,
           fontSize: textSize || 14,
-          color: textColor || Colors.primaryColor,
+          color: textColor || Colors.v,
           fontWeight: isBold ? "bold" : "normal" || "normal",
         }}
       >

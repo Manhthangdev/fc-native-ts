@@ -24,15 +24,15 @@ export const Spinner = ({
         width:
           type === "full" || type === "Full" || type === "fullscreen"
             ? windowWidth
-            : width !== undefined && width !== undefined && width !== NaN
-            ? width
-            : "100%",
+            : width !== undefined && width !== undefined && !Number.isNaN(width)
+              ? width
+              : "100%",
         height:
           type === "full" || type === "Full" || type === "fullscreen"
             ? windowHeight
-            : height !== undefined && height !== undefined && height !== NaN
-            ? height
-            : "100%",
+            : height !== undefined && height !== undefined && !Number.isNaN(height)
+              ? height
+              : "100%",
         backgroundColor:
           transparent === true ? Colors.transparent : Colors.white,
         alignItems: "center",
@@ -44,7 +44,7 @@ export const Spinner = ({
         color={
           color !== undefined && color !== undefined && color != "NaN"
             ? color
-            : Colors.primaryColor
+            : Colors.black
         }
       />
     </View>

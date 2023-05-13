@@ -48,14 +48,14 @@ export const CheckBox = ({
         color={
           !checked
             ? iconColor || Colors.blueGrey
-            : iconCheckedColor || Colors.primaryColor
+            : iconCheckedColor || Colors.black
         }
         size={iconSize || 30}
       />
       <Text
         style={{
           fontSize: textSize || 16,
-          color: textColor || Colors.primaryColor,
+          color: textColor || Colors.black,
           marginLeft: 5,
         }}
       >

@@ -39,14 +39,14 @@ export const Button = ({
         backgroundColor: isDark
           ? Colors.black
           : isLight
-          ? Colors.white
-          : Colors.transparent,
+            ? Colors.white
+            : Colors.transparent,
         borderRadius: radius || 0,
       }}
     >
       <TouchableOpacity
         onPress={() => {
-          onPress !== undefined ? onPress() : console.log("Green Native");
+          onPress !== undefined ? onPress() : console.log("cc");
         }}
         activeOpacity={0.5}
         style={{
@@ -59,15 +59,15 @@ export const Button = ({
           borderRadius: radius || 0,
           backgroundColor: isOutLine
             ? Colors.transparent
-            : background || Colors.primaryColor,
+            : background || Colors.black,
           borderWidth: isOutLine !== undefined ? boder || 1 : boder || 0,
-          borderColor: boderColor || Colors.primaryColor,
+          borderColor: boderColor || Colors.black,
         }}
       >
         <Text
           style={{
             color: isOutLine
-              ? textColor || Colors.primaryColor
+              ? textColor || Colors.black
               : textColor || Colors.white || Colors.white,
             fontWeight: textBold ? "bold" : "normal" || "normal",
             fontSize: fontSize || 14,
