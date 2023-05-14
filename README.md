@@ -69,3 +69,37 @@ dependencies {
 }
 ```
 
+
+### TextInput
+
+```javascript
+import { TextInputMoney , TextInputZipCode } from "fc-native-ts";
+
+//...
+
+export default function TextInputMoney() {
+  const [text, setText] = useState()
+
+  return (
+      <TextInputMoney 
+        // dont forget to set the "value" and "onChangeText" props
+        value={text} 
+        style={styles.input}
+        onChangeText={setText}
+      />
+  );
+}
+```
+
+#### Zip Code
+Mask: 99.999-999
+
+Sample code
+```
+  <TextInputZipCode 
+    // dont forget to set the "value" and "onChangeText" props
+    value={text} 
+    style={styles.input}
+    onChangeText={setText}
+  />
+```

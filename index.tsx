@@ -13,6 +13,8 @@ import { Spinner } from "./src/components/Spinner";
 import { ButtonIcon } from "./src/components/ButtonIcon";
 import { AnimationButton } from "./src/components/AnimationButton";
 import { CustomStyles } from "./src/styles/CustomStyles";
+import { TextInputMoney } from "./src/components/TextInputMoney";
+import { TextInputZipCode } from "./src/components/TextInputZipCode";
 
 import {
   randomNonRepeat,
@@ -41,6 +43,8 @@ export {
   windowWidth,
   windowHeight,
   CustomStyles,
+  TextInputMoney,
+  TextInputZipCode,
   Button,
   CheckBox,
   AnimationButton,
