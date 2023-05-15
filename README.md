@@ -95,7 +95,7 @@ export default function TextInputMoney() {
 Mask: 99.999-999
 
 Sample code
-```
+```javascript
   <TextInputZipCode 
     // dont forget to set the "value" and "onChangeText" props
     value={text} 
