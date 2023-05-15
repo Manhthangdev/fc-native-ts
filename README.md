@@ -38,13 +38,13 @@ Icons can be found at: https://oblador.github.io/react-native-vector-icons
 #### Android
 Edit android/app/build.gradle ( NOT android/build.gradle ) and add the following:
 
-```
+```javascript
 apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
 ```
 
 Edit android/settings.gradle to look like this (without the +):
 
-```
+```javascript
 project.ext.vectoricons = [
     iconFontNames: [ 'MaterialIcons.ttf', 'EvilIcons.ttf' ] // Name of the font files you want to copy
 ]
@@ -53,7 +53,7 @@ apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
 
 Edit android/app/build.gradle (note: app folder) to look like this:
 
-```
+```javascript
 apply plugin: 'com.android.application'
 
 android {
