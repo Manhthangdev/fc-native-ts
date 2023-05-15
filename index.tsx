@@ -32,7 +32,8 @@ import {
   isNumber,
   getPercent,
   handleRemoveSpace,
-  checkUserNameVNese
+  checkUserNameVNese,
+  checkImages
 } from "./src/function";
 import { useKeyboard } from "./src/hook/useKeyboard";
 
@@ -68,5 +69,6 @@ export {
   getPercent,
   handleRemoveSpace,
   checkUserNameVNese,
-  useKeyboard
+  useKeyboard,
+  checkImages
 };

@@ -200,6 +200,23 @@ const checkUserNameVNese = (value: string) => {
   return result;
 }
 
+const checkImages = (image: any) => {
+  let processedImage = image;
+
+  if (!image.includes('https://') && !image.includes('http://') && !image.includes('http')) {
+    processedImage = `https://${image}`;
+  } else if (image.includes('http://')) {
+    const split = image?.split('://');
+    processedImage = `${split?.[0]}s://${split?.[1]}`;
+  }
+
+  processedImage = processedImage.replace('_.webp', '').replace('.jpg._web', '');
+  processedImage = decodeURIComponent(processedImage);
+
+  return processedImage;
+}
+
+
 export {
   randomNonRepeat,
   isIOS,
@@ -216,7 +233,8 @@ export {
   isNumber,
   getPercent,
   handleRemoveSpace,
-  checkUserNameVNese
+  checkUserNameVNese,
+  checkImages
 };
 
 
