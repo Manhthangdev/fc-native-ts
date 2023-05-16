@@ -22,7 +22,7 @@ export const TextInputMoney = ({ value, ...res }) => {
                     isCommaFound = "found";
                     counter = 0;
                 } else if (counter === 3 && (arr.length != (index + 1))) {
-                    acc = acc + i + '.'
+                    acc = acc + i + ','
                     counter = 0;
                 } else {
                     acc = acc + i
