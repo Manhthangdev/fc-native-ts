@@ -1,4 +1,4 @@
-### Intall
+<!-- ### Intall
 
 ```
 npm i fc-native-ts react-native-vector-icons
@@ -102,4 +102,4 @@ Sample code
     style={styles.input}
     onChangeText={setText}
   />
-```
+``` -->

@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { Text, View, TouchableOpacity, Alert } from 'react-native';
 import { CalendarList } from 'react-native-calendars';
-
-export const currentDate = () => {
+const currentDate = () => {
   let date: any = new Date().getDate();
   let month: any = new Date().getMonth() + 1;
   if (date < 10) {
@@ -143,4 +142,3 @@ export const Choose2Days = ({
   );
 };
 
-export default Choose2Days;
