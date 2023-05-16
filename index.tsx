@@ -15,6 +15,7 @@ import { AnimationButton } from "./src/components/AnimationButton";
 import { CustomStyles } from "./src/styles/CustomStyles";
 import { TextInputMoney } from "./src/components/TextInputMoney";
 import { TextInputZipCode } from "./src/components/TextInputZipCode";
+import { Choose2Days } from "./src/components/Calendar";
 
 import {
   randomNonRepeat,
@@ -44,6 +45,7 @@ export {
   windowWidth,
   windowHeight,
   CustomStyles,
+  Choose2Days,
   TextInputMoney,
   TextInputZipCode,
   Button,
