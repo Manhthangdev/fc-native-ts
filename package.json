@@ -1,6 +1,6 @@
 {
   "name": "fc-native-ts",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "This is a library for React Native code (TypeScript)",
   "main": "index.tsx",
   "dependencies": {
