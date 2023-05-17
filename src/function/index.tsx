@@ -1,5 +1,7 @@
 import { Platform, Dimensions, Linking } from "react-native";
 import { Buffer } from 'buffer'
+import SimpleToast from 'react-native-simple-toast';
+import moment from 'moment';
 
 const randomNonRepeat = (max: number): any => {
   var arrayFinal: any = [];
@@ -71,6 +73,25 @@ const parseMoney = (value: string): any => {
   arrayText.reverse();
   arrayText.join("");
   return arrayText;
+};
+
+const parseToMoney = (value: any) => {
+  return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+};
+
+const getVND = (price: number | null, suffix: string = ' VNĐ') => {
+  if (price === null) return 0;
+
+  if (Number.isInteger(price)) {
+    return (
+      (price?.toString() || '0').replace(/\B(?=(\d{3})+(?!\d))/g, ',') + suffix
+    );
+  }
+  return price + suffix;
+};
+
+const toast = (text: string) => {
+  SimpleToast.show(text, SimpleToast.LONG);
 };
 
 const convertHTML = (text: any) => {
@@ -216,8 +237,30 @@ const checkImages = (image: any) => {
   return processedImage;
 }
 
+const getVNDate = (date: Date, format: string = "DD/MM/YYYY HH:mm:ss") => {
+  if (!date) return "--";
+  return moment(date).format(format);
+};
+
+const avatarOptions: any = {
+  mediaType: 'photo',
+  quality: 1,
+  maxWidth: 2000,
+  maxHeight: 2000,
+};
+
+const formatDate = (date: any) => {
+  let dArr = date.split('-'); // ex input "2010-01-18"
+  return dArr[2] + '/' + dArr[1] + '/' + dArr[0]; //ex out: "18/01/10"
+};
 
 export {
+  formatDate,
+  avatarOptions,
+  parseToMoney,
+  getVNDate,
+  getVND,
+  toast,
   randomNonRepeat,
   isIOS,
   isNull,

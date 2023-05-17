@@ -1,11 +1,12 @@
 {
   "name": "fc-native-ts",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "description": "This is a library for React Native code (TypeScript)",
   "main": "index.tsx",
   "dependencies": {
     "react-native-vector-icons": "^8.1.0",
-    "react-native-calendars": "^1.1295.0"
+    "react-native-calendars": "^1.1295.0",
+    "react-native-simple-toast": "^2.0.0"
   },
   "devDependencies": {},
   "scripts": {

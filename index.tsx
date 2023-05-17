@@ -18,6 +18,12 @@ import { TextInputZipCode } from "./src/components/TextInputZipCode";
 import { Choose2Days } from "./src/components/Calendar";
 
 import {
+  formatDate,
+  avatarOptions,
+  parseToMoney,
+  getVNDate,
+  getVND,
+  toast,
   randomNonRepeat,
   isIOS,
   isNull,
@@ -45,6 +51,12 @@ export {
   windowWidth,
   windowHeight,
   CustomStyles,
+  formatDate,
+  avatarOptions,
+  parseToMoney,
+  getVNDate,
+  getVND,
+  toast,
   Choose2Days,
   TextInputMoney,
   TextInputZipCode,
