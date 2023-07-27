@@ -1,6 +1,5 @@
 import { Platform, Dimensions, Linking } from "react-native";
 import { Buffer } from 'buffer'
-import SimpleToast from 'react-native-simple-toast';
 import moment from 'moment';
 
 const randomNonRepeat = (max: number): any => {
@@ -91,7 +90,7 @@ const getVND = (price: number | null, suffix: string = ' VNĐ') => {
 };
 
 const toast = (text: string) => {
-  SimpleToast.show(text, SimpleToast.LONG);
+  console.log(text);
 };
 
 const convertHTML = (text: any) => {
