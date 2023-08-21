@@ -55,6 +55,8 @@ export const config = {
     medium: "#02B875",
     white: "#fff",
     black: "#000",
+    input: '#F9F9FB',
+    placeholder: '#8E8E93',
   },
   sizes: {
     dW: windowWidth,
